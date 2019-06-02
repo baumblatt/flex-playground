@@ -1,0 +1,22 @@
+<mat-sidenav-container class="example-container" (backdropClick)="close()" fxFill>
+  <mat-sidenav mode="over" #sidenav>
+    <mat-list fxFlex="0 0 256px">
+      <mat-list-item>
+        <mat-icon mat-list-icon>home</mat-icon>
+        Home
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content fxLayout="column" fxLayoutAlign="start stretch">
+    <mat-toolbar color="primary" fxFlex="0 0 64px" fxFlex.lt-sm="0 0 56px">
+        <button mat-icon-button (click)="sidenav.toggle().then()"><mat-icon>menu</mat-icon></button>
+        <span>#2 Meetup Mobile BR - @angular/flex-layout</span>
+    </mat-toolbar>
+    <div class="container" fxLayout="column" fxFlex="1 1">
+      <router-outlet></router-outlet>
+    </div>
+    <footer fxLayout="row" fxLayoutAlign="end center" fxFlex="0 0 26px">
+      Guarantee: Just 100% pure Flex Layout!&nbsp;
+    </footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

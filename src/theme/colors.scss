@@ -1,0 +1,54 @@
+@import '~@angular/material/theming';
+@import "./pallet.scss";
+
+$black-87-opacity: rgba(black, 0.87);
+$white-87-opacity: rgba(white, 0.87);
+$black-12-opacity: rgba(black, 0.12);
+$white-12-opacity: rgba(white, 0.12);
+$black-6-opacity: rgba(black, 0.06);
+$white-6-opacity: rgba(white, 0.06);
+
+$app-pallet-brmania: mat-palette($br-brmania);
+$app-pallet-blue: mat-palette($br-blue);
+$app-pallet-lightblue: mat-palette($br-lightblue);
+$app-pallet-bluegray: mat-palette($br-bluegray);
+$app-pallet-gray: mat-palette($br-gray);
+$app-pallet-darkgray: mat-palette($br-darkgray);
+$app-pallet-yellow: mat-palette($br-yellow);
+$app-pallet-orange: mat-palette($br-orange);
+$app-pallet-green: mat-palette($br-green);
+$app-pallet-lightgreen: mat-palette($br-lightgreen);
+
+$app-palette: (
+		brmania: $app-pallet-brmania,
+		blue: $app-pallet-blue,
+		lightblue: $app-pallet-lightblue,
+		bluegray: $app-pallet-bluegray,
+		gray: $app-pallet-gray,
+		darkgray: $app-pallet-darkgray,
+		yellow: $app-pallet-yellow,
+		green: $app-pallet-green,
+		lightgreen: $app-pallet-lightgreen,
+		orange: $app-pallet-orange,
+);
+
+$app-theme-primary: $app-pallet-green;
+$app-theme-accent: $app-pallet-yellow;
+$app-theme-warn: $app-pallet-orange;
+
+// create theme (use mat-dark-theme for themes with dark backgrounds)
+$app-theme: mat-dark-theme(
+				$app-theme-primary,
+				$app-theme-accent,
+				$app-theme-warn
+);
+
+$br-mania-theme-primary: $app-pallet-brmania;
+$br-mania-theme-accent: $app-pallet-green;
+$br-mania-theme-warn: $app-pallet-orange;
+
+$br-mania-theme: mat-light-theme(
+				$br-mania-theme-primary,
+				$br-mania-theme-accent,
+				$br-mania-theme-warn
+);
