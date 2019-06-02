@@ -1,9 +1,13 @@
 <mat-sidenav-container class="example-container" (backdropClick)="close()" fxFill>
   <mat-sidenav mode="over" #sidenav>
     <mat-list fxFlex="0 0 256px">
-      <mat-list-item>
+      <mat-list-item routerLink="/layout/home">
         <mat-icon mat-list-icon>home</mat-icon>
         Home
+      </mat-list-item>
+      <mat-list-item routerLink="/layout/flexbox">
+        <mat-icon mat-list-icon>dashboard</mat-icon>
+        Flexbox
       </mat-list-item>
     </mat-list>
   </mat-sidenav>

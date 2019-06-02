@@ -21,3 +21,16 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$accent: map-get($app-theme, accent);
+$background: map-get($app-theme, background);
+code {
+	background: mat-color($background, card);
+	border-radius: 4px;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	padding: 4px;
+
+	&.accent {
+		color: mat-color($accent);
+	}
+}
