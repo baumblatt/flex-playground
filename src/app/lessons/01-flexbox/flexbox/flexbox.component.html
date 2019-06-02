@@ -2,7 +2,7 @@
 	<div fxFlex="0 0 20px"></div>
 	<div class="title" fxLayout="column" fxLayoutAlign="start stretch" fxFlex="1 1 auto">
 		<h1 class="mat-h1" fxLayout="row" fxLayoutAlign="center">Flexbox - Basics & Terminology</h1>
-		<div class="content" fxLayout="row wrap" fxLayoutAlign="space-evenly">
+		<div class="content" fxLayout="row wrap" fxLayoutAlign="space-around">
 			<div class="left" fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="16px">
 				<div class="content" fxLayout="row" fxLayoutAlign="center">
 					<img src="https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg" alt="" fxFlex="1 1 300px">
@@ -29,10 +29,10 @@
 					<img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg" alt="" fxFlex="1 1 300px">
 				</div>
 				<div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="4px">
-					<div fxLayout="column" fxLayoutAlign="center center" fxFlex="1 1 auto">
+					<div fxLayout="column" fxLayoutAlign="center center">
 						<code class="accent">fxLayout</code>
 					</div>
-					<div fxLayout="column" fxLayoutAlign="center center" fxFlex="3 3 auto">
+					<div fxLayout="column" fxLayoutAlign="center center">
 						<code>&lt;direction&gt; [wrap]</code>
 					</div>
 				</div>
@@ -51,13 +51,19 @@
 					justify-content
 				</h4>
 				<div class="content" fxLayout="column" fxLayoutAlign="center">
-					<img src="https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg" alt="" fxFlex="1 1 350px">
+					<img src="https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg" alt="" fxFlex="1 1 450px">
+				</div>
+				<h4 class="mat-h4" fxLayout="row" fxLayoutAlign="start">
+					align-items
+				</h4>
+				<div class="content" fxLayout="column" fxLayoutAlign="center">
+					<img src="https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg" alt="" fxFlex="1 1 350px">
 				</div>
 				<div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="4px">
-					<div fxLayout="column" fxLayoutAlign="center center" fxFlex="1 1 auto">
+					<div fxLayout="column" fxLayoutAlign="center center">
 						<code class="accent">fxLayoutAlign</code>
 					</div>
-					<div fxLayout="column" fxLayoutAlign="center center" fxFlex="3 3 auto">
+					<div fxLayout="column" fxLayoutAlign="center center">
 						<code>&lt;main-axis&gt; &lt;cross-axis&gt;</code>
 					</div>
 				</div>
@@ -77,6 +83,12 @@
 				<h4 class="mat-h4">
 					Properties for the Children<br>(flex items)
 				</h4>
+				<div fxLayout="row" fxLayoutAlign="center">
+					<svg height="22" width="110">
+						<line x1="0" y1="5" x2="50" y2="5" style="stroke:rgba(255, 255, 255, 0.12);stroke-width:2"></line>
+						<line x1="60" y1="5" x2="110" y2="5" style="stroke:rgba(255, 255, 255, 0.12);stroke-width:2"></line>
+					</svg>
+				</div>
 			</div>
 		</div>
 	</div>
