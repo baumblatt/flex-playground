@@ -1,4 +1,3 @@
-import {AngularCompilerOptions} from '@angular/compiler-cli';
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {HomeComponent} from './containers/home/home.component';
