@@ -9,13 +9,15 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {LayoutComponent} from './containers/layout/layout.component';
 import {HomeComponent} from './containers/home/home.component';
 import {FlexboxComponent} from './lessons/01-flexbox/flexbox/flexbox.component';
+import { AngularComponent } from './lessons/02-angular/angular/angular.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		LayoutComponent,
 		HomeComponent,
-		FlexboxComponent
+		FlexboxComponent,
+		AngularComponent
 	],
 	imports: [
 		BrowserModule,
