@@ -36,6 +36,12 @@ code {
 	}
 }
 
+p {
+	span.accent {
+		color: mat-color($accent);
+	}
+}
+
 div.a {
 	background-color: mat-color($primary, 100);
 }

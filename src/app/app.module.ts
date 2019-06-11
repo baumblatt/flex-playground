@@ -1,5 +1,5 @@
 import {FlexLayoutModule, FlexModule} from '@angular/flex-layout';
-import {MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatTableModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatIconModule, MatListModule, MatSidenavModule, MatTableModule, MatToolbarModule} from '@angular/material';
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
@@ -34,7 +34,8 @@ import { ResponsiveComponent } from './lessons/03-responsive/responsive/responsi
 		MatIconModule,
 		MatListModule,
 		FlexModule,
-		FlexLayoutModule
+		FlexLayoutModule,
+		MatCardModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
