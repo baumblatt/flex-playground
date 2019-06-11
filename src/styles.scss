@@ -22,6 +22,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+$primary: map-get($app-theme, primary);
 $accent: map-get($app-theme, accent);
 $background: map-get($app-theme, background);
 code {
@@ -33,4 +34,32 @@ code {
 	&.accent {
 		color: mat-color($accent);
 	}
+}
+
+div.a {
+	background-color: mat-color($primary, 100);
+}
+div.b {
+	background-color: mat-color($primary, 200);
+}
+div.c {
+	background-color: mat-color($primary, 300);
+}
+div.d {
+	background-color: mat-color($primary, 400);
+}
+div.e {
+	background-color: mat-color($primary, 500);
+}
+div.f {
+	background-color: mat-color($primary, 600);
+}
+div.g {
+	background-color: mat-color($primary, 700);
+}
+div.h {
+	background-color: mat-color($primary, 800);
+}
+div.i {
+	background-color: mat-color($primary, 900);
 }

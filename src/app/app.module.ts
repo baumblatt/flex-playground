@@ -1,4 +1,4 @@
-import {FlexModule} from '@angular/flex-layout';
+import {FlexLayoutModule, FlexModule} from '@angular/flex-layout';
 import {MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatTableModule, MatToolbarModule} from '@angular/material';
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
@@ -10,6 +10,8 @@ import {LayoutComponent} from './containers/layout/layout.component';
 import {HomeComponent} from './containers/home/home.component';
 import {FlexboxComponent} from './lessons/01-flexbox/flexbox/flexbox.component';
 import { AngularComponent } from './lessons/02-angular/angular/angular.component';
+import { PlaygroundComponent } from './lessons/04-playground/playground/playground.component';
+import { ResponsiveComponent } from './lessons/03-responsive/responsive/responsive.component';
 
 @NgModule({
 	declarations: [
@@ -17,7 +19,9 @@ import { AngularComponent } from './lessons/02-angular/angular/angular.component
 		LayoutComponent,
 		HomeComponent,
 		FlexboxComponent,
-		AngularComponent
+		AngularComponent,
+		PlaygroundComponent,
+		ResponsiveComponent
 	],
 	imports: [
 		BrowserModule,
@@ -29,7 +33,8 @@ import { AngularComponent } from './lessons/02-angular/angular/angular.component
 		MatButtonModule,
 		MatIconModule,
 		MatListModule,
-		FlexModule
+		FlexModule,
+		FlexLayoutModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
